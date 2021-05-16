@@ -9,4 +9,6 @@ nodemon |
 concurrently|
 
 Deployed in Heroku |
-Hosted on MongoDB Atlas
+Hosted on MongoDB Atlas |
+
+Final Public website -> https://bucket-list-bhaskar.herokuapp.com/
