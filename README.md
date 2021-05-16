@@ -8,5 +8,5 @@ morgan |
 nodemon |
 concurrently|
 
-Deployed in Heroku 
+Deployed in Heroku |
 Hosted on MongoDB Atlas
