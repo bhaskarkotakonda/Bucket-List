@@ -2,9 +2,13 @@
   "name": "BucketList",
   "version": "1.0.0",
   "description": "MEVN stack implementation and deployment of a basic web app",
-  "main": "index.js",
+  "main": "service.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "service": "nodemon service.js --ignore 'client/'",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run service\" \"npm run client\"",
+    "start": "node server.js",
+    "build": "npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,14 @@
   },
   "homepage": "https://github.com/bhaskarkotakonda/BucketList#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.9",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
   }
 }
