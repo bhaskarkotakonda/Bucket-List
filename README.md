@@ -1,8 +1,6 @@
 # BucketList
-MEVN stack implementation and deployment of a basic web app
+Full stack implementation of a Bucket List webapp usine MEVN stack - Mongo, Express, Vue JS, Node JS
 
-express
-mongoose
 body-parser 
 cors
 morgan
